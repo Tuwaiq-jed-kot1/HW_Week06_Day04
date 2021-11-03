@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HW_Week06_Day04</string>
+    <string name="id">Id : </string>
+    <string name="name">Name :</string>
+    <string name="number_of_view">Number of View :</string>
+    <string name="channel_name">Channel Name :</string>
 </resources>
