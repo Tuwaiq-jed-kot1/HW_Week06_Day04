@@ -7,7 +7,7 @@ import kotlinx.coroutines.withContext
 class YoutubeRepo {
     private val api = YoutubeBuilder.youtubeAPI
 
-    suspend fun youTubeInfo(): YoutubeData = withContext(Dispatchers.IO) {
+    suspend fun youTubeInfo(): YouTubData = withContext(Dispatchers.IO) {
         api.fetchVideoInfo()
     }
 }

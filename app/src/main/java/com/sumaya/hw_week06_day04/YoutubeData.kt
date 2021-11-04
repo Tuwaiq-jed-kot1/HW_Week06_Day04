@@ -9,7 +9,7 @@ data class YouTubData(
 data class Video (
     val id : Int,
     val name : String,
-    @SerializedName("imageUrl")
+    //@SerializedName("imageUrl")
     val imageUrl : String,
     val channel : Channel,
     val numberOfViews : Int

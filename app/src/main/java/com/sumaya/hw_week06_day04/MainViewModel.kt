@@ -9,8 +9,8 @@ import kotlinx.coroutines.launch
 
 class MainViewModel: ViewModel() {
     val repo = YoutubeRepo()
-    fun youTubeInfo(): LiveData<YoutubeData> {
-        val videos = MutableLiveData<YoutubeData>()
+    fun youTubeInfo(): LiveData<YouTubData> {
+        val videos = MutableLiveData<YouTubData>()
         viewModelScope.launch {
             try {
                 videos.postValue(repo.youTubeInfo())
