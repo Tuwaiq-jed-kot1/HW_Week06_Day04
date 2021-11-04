@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iV"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15sp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/iV"
+        tools:layout_editor_absoluteX="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15sp"
+        android:textSize="15sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvId"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15sp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:layout_editor_absoluteX="-16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNumberOfViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15sp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvChannel"
+        tools:layout_editor_absoluteX="-16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
