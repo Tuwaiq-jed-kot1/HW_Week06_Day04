@@ -19,7 +19,7 @@ class YoutubeAdapter(val userData: List<YTData>) : RecyclerView.Adapter<CustomHo
     }
 
     override fun onBindViewHolder(holder: CustomHolder, position: Int) {
-        val video = userData[position]
+        val video = YTVideos[position]
 
         holder.videoId.text = "ID: ${video.id.toString()}"
         holder.nameOfVideo.text = "Video name: ${video.name}"
