@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface YoutubeApi {
 
-    @GET("youtube/home_feed")
+    @GET("youtube/home_feed/")
     suspend fun fetchVideos(): YoutubeData
 }
