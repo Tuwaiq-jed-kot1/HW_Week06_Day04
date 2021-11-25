@@ -9,7 +9,7 @@ import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
     lateinit var rvRecyclerView: RecyclerView
-    //lateinit var yVList: List<YoutubeData>
+    lateinit var yVList: List<YoutubeData>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         rvRecyclerView = findViewById(R.id.rvRecyclerView)
         //rvRecyclerView.setBackgroundColor(Color.RED)
         rvRecyclerView.layoutManager = LinearLayoutManager(this)
-        rvRecyclerView.adapter = RVAdapter()
+        rvRecyclerView.adapter = RVAdapter(yVList)
         fetchJson()
     }
 
